@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Mostafizur Rahman | Developer & Aesthetic Portfolio</title>
+    <meta name="description" content="Portfolio of MD Mostafizur Rahman - Computer Science student and software developer passionate about modern glassmorphism aesthetics and clean code.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- External Stylesheet (Pure CSS) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- DYNAMIC AMBIENT MESH & ORBS (Glassmorphism backdrop) -->
+    <div class="ambient-bg" aria-hidden="true">
+        <div class="ambient-grid"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+    </div>
+
+    <!-- FLOATING GLASS HEADER / NAVIGATION (Docks to left on scroll) -->
+    <header id="header">
+        <nav id="navbar">
+            <a href="#home" class="logo" title="Back to Home">
+                <div class="logo-badge">M</div>
+                <span class="logo-text">Mostafizur <span class="gradient-text">Rahman</span></span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li>
+                    <a href="#home" class="nav-item active" data-tooltip="Home">
+                        <i class="fa-solid fa-house nav-icon"></i>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-item" data-tooltip="About">
+                        <i class="fa-solid fa-user nav-icon"></i>
+                        <span class="nav-text">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" class="nav-item" data-tooltip="Skills">
+                        <i class="fa-solid fa-code nav-icon"></i>
+                        <span class="nav-text">Skills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects" class="nav-item" data-tooltip="Projects">
+                        <i class="fa-solid fa-rocket nav-icon"></i>
+                        <span class="nav-text">Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-item" data-tooltip="Contact">
+                        <i class="fa-solid fa-envelope nav-icon"></i>
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="Md%20Mostafizur%20Rahman%20-%20Curriculum%20Vitae.pdf" download="Md Mostafizur Rahman - Curriculum Vitae.pdf" target="_blank" class="nav-btn nav-btn-cv" title="Download CV">
+                    <i class="fa-solid fa-download"></i> <span class="cta-text">CV</span>
+                </a>
+                <a href="#contact" class="nav-btn" title="Let's Talk">
+                    <i class="fa-solid fa-paper-plane"></i> <span class="cta-text">Let's Talk</span>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO & ABOUT SECTION -->
+        <section class="hero-section" id="home">
+            <div class="hero-content" id="about">
+                <div class="hero-status">
+                    <div class="glass-pill">
+                        <span class="pulse-dot"></span>
+                        Available for Projects & Opportunities
+                    </div>
+                </div>
+
+                <h1 class="hero-title">
+                    Hi, I'm <br>
+                    <span class="gradient-text">MD Mostafizur Rahman</span>
+                </h1>
+
+                <div class="typing-container">
+                    <span>I build</span>
+                    <span id="element" class="gradient-text-cyan"></span>
+                </div>
+
+                <div class="hero-bio-card">
+                    <p>
+                        Passionate Computer Science student and software developer dedicated to crafting 
+                        intuitive, responsive web applications with clean architecture and modern 
+                        glassmorphism aesthetics.
+                    </p>
+                </div>
+
+                <!-- Quick Highlights -->
+                <div class="hero-highlights">
+                    <div class="highlight-badge">
+                        <i class="fa-solid fa-code"></i> Frontend Engineering
+                    </div>
+                    <div class="highlight-badge">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Glassmorphic Design
+                    </div>
+                    <div class="highlight-badge">
+                        <i class="fa-solid fa-graduation-cap"></i> CSE Student
+                    </div>
+                </div>
+
+                <!-- CTA Button Group -->
+                <div class="btn-group">
+                    <a href="Md%20Mostafizur%20Rahman%20-%20Curriculum%20Vitae.pdf" download="Md Mostafizur Rahman - Curriculum Vitae.pdf" target="_blank" class="btn btn-primary" id="downloadCvBtn">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fa-solid fa-comment-dots"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile Visual with Floating Glass Badges -->
+            <div class="hero-visual">
+                <div class="profile-glow-ring"></div>
+
+                <div class="glass-profile-card">
+                    <!-- Floating Top Badge -->
+                    <div class="floating-glass-badge badge-top-left">
+                        <div class="badge-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div>
+                            <div class="badge-text-primary">Web Developer</div>
+                            <div class="badge-text-sub">Modern UI/UX</div>
+                        </div>
+                    </div>
+
+                    <!-- Profile Image Wrapper -->
+                    <div class="photo-wrapper">
+                        <img src="WhatsApp Image 2026-10-25 at 1.11.41 AM.jpeg" alt="MD Mostafizur Rahman" class="profile-img">
+                    </div>
+
+                    <!-- Floating Bottom Badge -->
+                    <div class="floating-glass-badge badge-bottom-right">
+                        <div class="badge-icon cyan-bg">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <div>
+                            <div class="badge-text-primary">Problem Solver</div>
+                            <div class="badge-text-sub">CS & Algorithms</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS & HIGHLIGHTS GLASS RIBBON -->
+        <section class="stats-ribbon">
+            <div class="stats-grid">
+                <div class="stat-glass-card">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <div>
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Responsive & Aesthetic</div>
+                    </div>
+                </div>
+
+                <div class="stat-glass-card">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-code-commit"></i>
+                    </div>
+                    <div>
+                        <div class="stat-number">Clean</div>
+                        <div class="stat-label">Modern Code Standards</div>
+                    </div>
+                </div>
+
+                <div class="stat-glass-card">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div>
+                        <div class="stat-number">Fast</div>
+                        <div class="stat-label">Optimized Performance</div>
+                    </div>
+                </div>
+
+                <div class="stat-glass-card">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <div>
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Curiosity & Growth</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS & EXPERTISE SECTION -->
+        <section class="section-wrapper" id="skills">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fa-solid fa-sparkles"></i> Tech Stack & Expertise
+                </div>
+                <h2 class="section-title">What I Bring to the Table</h2>
+                <p class="section-subtitle">
+                    A versatile toolkit combining frontend aesthetics, modern tools, and solid computer science fundamentals.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill Card 1: Programming Languages -->
+                <div class="skill-glass-card">
+                    <div class="skill-card-header">
+                        <div class="skill-card-icon icon-languages">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div>
+                            <h3 class="skill-card-title">Programming Languages</h3>
+                        </div>
+                    </div>
+                    <p class="skill-card-desc">
+                        Core programming languages used for algorithmic problem solving, software logic, system programming, and development.
+                    </p>
+                    <div class="skill-pill-list">
+                        <span class="skill-tag"><i class="fa-solid fa-terminal icon-c"></i> C</span>
+                        <span class="skill-tag"><i class="fa-solid fa-code icon-cpp"></i> C++</span>
+                        <span class="skill-tag"><i class="fa-brands fa-java icon-java"></i> Java</span>
+                        <span class="skill-tag"><i class="fa-brands fa-python icon-python"></i> Python</span>
+                        <span class="skill-tag"><i class="fa-brands fa-js icon-js"></i> JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 2: Frontend -->
+                <div class="skill-glass-card">
+                    <div class="skill-card-header">
+                        <div class="skill-card-icon icon-frontend">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <div>
+                            <h3 class="skill-card-title">Frontend Engineering</h3>
+                        </div>
+                    </div>
+                    <p class="skill-card-desc">
+                        Developing pixel-perfect, mobile-first, and highly responsive user interfaces with vibrant glassmorphic styling.
+                    </p>
+                    <div class="skill-pill-list">
+                        <span class="skill-tag"><i class="fa-brands fa-html5 icon-html"></i> HTML5</span>
+                        <span class="skill-tag"><i class="fa-brands fa-css3-alt icon-css"></i> CSS3 / Glassmorphism</span>
+                        <span class="skill-tag"><i class="fa-brands fa-js icon-js"></i> JavaScript (ES6+)</span>
+                        <span class="skill-tag"><i class="fa-solid fa-mobile-screen"></i> Responsive UI</span>
+                        <span class="skill-tag"><i class="fa-solid fa-palette"></i> Modern Design Tokens</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 3: Tools & Workflow -->
+                <div class="skill-glass-card">
+                    <div class="skill-card-header">
+                        <div class="skill-card-icon icon-tools">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <div>
+                            <h3 class="skill-card-title">Tools & Environment</h3>
+                        </div>
+                    </div>
+                    <p class="skill-card-desc">
+                        Leveraging modern developer tools, version control, and debugging environments for frictionless development.
+                    </p>
+                    <div class="skill-pill-list">
+                        <span class="skill-tag"><i class="fa-brands fa-git-alt icon-git"></i> Git</span>
+                        <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+                        <span class="skill-tag"><i class="fa-solid fa-terminal"></i> Terminal & CLI</span>
+                        <span class="skill-tag"><i class="fa-solid fa-code-branch"></i> VS Code</span>
+                        <span class="skill-tag"><i class="fa-brands fa-chrome icon-chrome"></i> DevTools Debugging</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 4: Core CS -->
+                <div class="skill-glass-card">
+                    <div class="skill-card-header">
+                        <div class="skill-card-icon icon-core">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div>
+                            <h3 class="skill-card-title">Computer Science</h3>
+                        </div>
+                    </div>
+                    <p class="skill-card-desc">
+                        Solid grounding in computational logic, algorithmic thinking, data structures, and clean code principles.
+                    </p>
+                    <div class="skill-pill-list">
+                        <span class="skill-tag"><i class="fa-solid fa-diagram-project"></i> Data Structures</span>
+                        <span class="skill-tag"><i class="fa-solid fa-gears"></i> Algorithms</span>
+                        <span class="skill-tag"><i class="fa-solid fa-cube"></i> OOP Concepts</span>
+                        <span class="skill-tag"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
+                        <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> System Fundamentals</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED PROJECTS SECTION -->
+        <section class="section-wrapper" id="projects">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fa-solid fa-rocket"></i> Portfolio Showcase
+                </div>
+                <h2 class="section-title">Featured Projects & Work</h2>
+                <p class="section-subtitle">
+                    Explore selected projects featuring modern design architecture, glassmorphic interfaces, and polished interactivity.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project Card: AI Crop Recommendation System -->
+                <div class="project-glass-card">
+                    <div class="project-thumbnail">
+                        <img src="crop_project.jpg" alt="AI Based Crop Recommendation System">
+                        <span class="project-badge">AI &amp; Machine Learning</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">AI Crop Recommendation System</h3>
+                        <p class="project-desc">
+                            An intelligent agricultural decision-support system powered by Machine Learning. Analyzes soil parameters (Nitrogen, Phosphorus, Potassium), environmental temperature, humidity, pH level, and rainfall to accurately recommend the most suitable crop for maximized agricultural yield.
+                        </p>
+                        <div class="project-tags">
+                            <span class="p-tag">Machine Learning</span>
+                            <span class="p-tag">Python</span>
+                            <span class="p-tag">Predictive Model</span>
+                            <span class="p-tag">Flask / Server</span>
+                            <span class="p-tag">JavaScript &amp; CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/mostafizur-82/crop-recommendation-system" target="_blank" class="project-btn project-btn-primary">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
+                            </a>
+                            <a href="https://github.com/mostafizur-82/crop-recommendation-system" target="_blank" class="project-btn project-btn-secondary">
+                                <i class="fa-brands fa-github"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT & CONNECT SECTION -->
+        <section class="section-wrapper" id="contact">
+            <div class="contact-container">
+                <!-- Contact Info Col -->
+                <div class="contact-info-col">
+                    <div class="section-badge mb-12">
+                        <i class="fa-solid fa-envelope"></i> Get In Touch
+                    </div>
+                    <h3>Let's Create Something <span class="gradient-text">Exceptional</span></h3>
+                    <p>
+                        Whether you have an upcoming project, an internship opportunity, or just want to connect over software engineering and modern design, I'd love to hear from you!
+                    </p>
+
+                    <div class="contact-cards-stack">
+                        <a href="mailto:mostafizur.dev@example.com" class="contact-item-card">
+                            <div class="contact-icon-box">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                            </div>
+                            <div>
+                                <div class="contact-item-title">Email</div>
+                                <div class="contact-item-value">mostafizur.dev@example.com</div>
+                            </div>
+                        </a>
+
+                        <div class="contact-item-card">
+                            <div class="contact-icon-box">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="contact-item-title">Location</div>
+                                <div class="contact-item-value">Dhaka, Bangladesh</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-card">
+                            <div class="contact-icon-box">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                <div class="contact-item-title">Status</div>
+                                <div class="contact-item-value">Open for Opportunities</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Glass Buttons -->
+                    <div class="social-links">
+                        <a href="https://github.com/mostafizur-82" target="_blank" class="social-glass-btn" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-glass-btn" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="social-glass-btn" title="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="mailto:mostafizur.dev@example.com" class="social-glass-btn" title="Send Email">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Frosted Contact Form -->
+                <div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label" for="userName">Your Name</label>
+                            <input type="text" id="userName" class="glass-input" placeholder="e.g. Alex Rahman" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="userEmail">Your Email</label>
+                            <input type="email" id="userEmail" class="glass-input" placeholder="e.g. alex@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="userSubject">Subject</label>
+                            <input type="text" id="userSubject" class="glass-input" placeholder="e.g. Project Collaboration / Opportunity" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="userMessage">Message</label>
+                            <textarea id="userMessage" class="glass-input" placeholder="Share your message or project requirements..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">
+                &copy; 2026 <strong>MD Mostafizur Rahman</strong>. Built with Glassmorphism &amp; Passion.
+            </div>
+
+            <a href="#home" class="back-to-top" title="Back to top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- External Scripts (Separate JS) -->
+    <script src="https://unpkg.com/typed.js@2.0.12"></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
