@@ -144,7 +144,8 @@ def run():
     server_url = f"http://localhost:{server_port}"
 
     socketserver.TCPServer.allow_reuse_address = True
-    with socketserver.TCPServer(("", server_port), PortfolioRequestHandler) as httpd:
+    server_class = getattr(http.server, "ThreadingHTTPServer", socketserver.ThreadingTCPServer)
+    with server_class(("", server_port), PortfolioRequestHandler) as httpd:
         print("\n" + "=" * 60)
         print("  MD MOSTAFIZUR RAHMAN - PORTFOLIO LOCAL SERVER")
         print("=" * 60)
